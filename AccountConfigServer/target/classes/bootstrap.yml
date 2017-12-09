@@ -1,0 +1,12 @@
+server:
+ port: 8888
+spring:
+ profiles:
+  active: native
+ application:
+   name: accountconfig 
+ cloud:
+  config:
+   server:
+    native:
+     searchLocations: file:C:\\Users\\santh\\workspace\\AccountMicroserviceParent\\AccountConfigServer\\src\\main\\resources\\config\\accountregistration, file:C:\\Users\\santh\\workspace\\AccountMicroserviceParent\\AccountConfigServer\\src\\main\\resources\\config\\accountcancellation 

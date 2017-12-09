@@ -1,0 +1,30 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: accountgateway
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
+zuul:
+ ignored-services: '*'
+ sensitiveHeaders: Cookie,Set-Cookie
+ routes:
+  accountregistration:
+    path: /accountregistration/**
+    stripPrefix: false
+    serviceId: accountregistration
+  accountsecurity:
+    path: /accountsecurity/**
+    stripPrefix: false
+    serviceId: accountsecurity
+  accountcancellation:
+    path: /accountcancellation/**
+    stripPrefix: false
+    serviceId: accountcancellation
+    

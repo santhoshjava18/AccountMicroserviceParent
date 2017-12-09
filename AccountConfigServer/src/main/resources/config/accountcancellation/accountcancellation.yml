@@ -1,0 +1,4 @@
+accountcancellation:
+ example:
+  property: "account cancellation test property"
+  

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: accountcancellation
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      uri: http://localhost:8888
+server:
+  port: 8091
+  contextPath: /accountcancellation
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
+    
