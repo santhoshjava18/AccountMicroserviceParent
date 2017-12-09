@@ -6,4 +6,8 @@
   <packaging>pom</packaging>
   <name>AccountMicroserviceParent</name>
   <description>Parent for All microservices</description>
+  <modules>
+  	<module>AccountConfigServer</module>
+  	
+  </modules>
 </project>
